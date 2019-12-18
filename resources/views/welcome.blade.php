@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Laravel - Relaciones</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -72,7 +72,7 @@
 
                 <div class="links">
                     @foreach ($users as $user)
-                        <a href="#">{{ $user->name }}</a>
+                        <a href="{{ route('profile', $user->id) }}">{{ $user->name }}</a>
                     @endforeach
                 </div>
             </div>
